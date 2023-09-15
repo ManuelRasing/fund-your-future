@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Kantumruy+Pro:ital,wght@0,500;0,700;1,400&family=Mohave:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@500&family=Montserrat+Subrayada:wght@400;700&family=Poppins:wght@600&display=swap");
+@font-face {
+  font-family: "Subrayada";
+  src: url("/public/assets/fonts/Montserrat_Subrayada/MontserratSubrayada-Regular.ttf");
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f5eb;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.fyf-bg-img1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.fyf-bg-img2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: -50px;
+}
+
+.fyf-btn-reg {
+  color: #2351fb;
+  padding: 5px 20px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 3px 3px #e87700;
+  font-size: 18px;
+}
+
+.fyf-btn-reg:hover {
+  color: #f9f5eb;
+  border: 2px solid #f9f5eb;
+  background-color: #e87700;
+  box-shadow: 3px 3px #2351fb;
+}
+
+.fyf-btn-reg:focus {
+  outline: 0;
+  color: #f9f5eb;
+  background-color: #e87700;
+  box-shadow: 1px 1px #2351fb;
+}
+
+.fyf-slogan h1 {
+  font-size: 50px;
+  text-align: justify;
+}
+
+.fyf-slogan p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.fyf-nav {
+  background-color: #2352fb00;
+}
+
+.fyf h1 {
+  font-size: 30px;
+  line-height: normal;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tab-links {
+  color: #f9f5eb;
+  font-size: 20px;
+}
+
+.tab-links:hover {
+  color: #fdc500;
+}
+
+.fyf-bg-ellipse2 {
+  top: 70px;
+  right: 170px;
+  animation: slide1 5s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translate(0, 0);
+    z-index: 12;
+  }
+  50% {
+    transform: translate(-470px, 170px) scale(1.5, 1.5);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.5, 1.5);
+  }
+}
+
+.fyf-bg-ellipse1 {
+  top: 500px;
+  right: 500px;
+  z-index: -1;
+  animation: slide2 9s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translate(0, 0);
+    z-index: 1;
+  }
+  50% {
+    transform: translate(510px, -170px) scale(1, 1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.6, 0.6);
+  }
+}
